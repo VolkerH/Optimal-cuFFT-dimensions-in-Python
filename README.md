@@ -8,3 +8,10 @@ This repo contains a short python code snippet in the form of a [Jupyter noteboo
 
 * `sympy`
 * `numpy`
+
+## See also
+
+for similar approaches see
+
+* `findOptimalDimension` in https://github.com/dmilkie/cudaDecon/blob/master/RL-Biggs-Andrews.cpp uses recursive modulo operations for testing
+* `scipy.fftpack` https://github.com/scipy/scipy/blob/master/scipy/fftpack/helper.py uses a rainbow table to be fast for small array sizes but is otherwise complicated
