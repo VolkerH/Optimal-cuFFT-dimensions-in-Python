@@ -7,3 +7,10 @@ This repo contains the following:
 values for what I consider reasonable input sizes. Use the Jupyter notebook to create a larger rainbow table if required. 
 * `factorization_cufft_pad.py` provides python functions that find the closest optimal dimension for a given input value by factorization. This has additional dependencies and is considerably slower than the table lookup. However, it hanles edge cases better.
 * [An explanatory Jupyter notebook](https://github.com/VolkerH/Optimal-cuFFT-dimensions-in-Python/blob/master/Optimal%20Dimensions%20for%20cuFFT.ipynb) This notebook illustrates the usage of both methods and also contains the code that generates the rainbow table.
+
+## See also
+
+for related approaches see:
+
+* `findOptimalDimension` in https://github.com/dmilkie/cudaDecon/blob/master/RL-Biggs-Andrews.cpp uses recursive modulo operations for testing
+* `scipy.fftpack` https://github.com/scipy/scipy/blob/master/scipy/fftpack/helper.py uses a rainbow table to be fast for small array sizes but has a fallback
