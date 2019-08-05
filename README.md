@@ -14,4 +14,4 @@ values for what I consider reasonable input sizes. Use the Jupyter notebook to c
 for related approaches see:
 
 * `findOptimalDimension` in https://github.com/dmilkie/cudaDecon/blob/master/RL-Biggs-Andrews.cpp uses recursive modulo operations for testing
-* `scipy.fftpack` https://github.com/scipy/scipy/blob/master/scipy/fftpack/helper.py uses a rainbow table to be fast for small array sizes but has a fallback
+* `scipy.fftpack` https://github.com/scipy/scipy/blob/maintenance/1.3.x/scipy/fftpack/helper.py#L99 used to use a rainbow table to be fast for small array sizes but had a fallback. This has meanwhile changed (haven't looked in detail at their new code).
